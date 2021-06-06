@@ -1,0 +1,32 @@
+header {
+    text-align: center;
+    color: blueviolet;
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+button {
+    background-color: rgb(167, 167, 240);
+    align-self: center;
+    color: rgb(255, 255, 255);
+    width: 15%;
+    border-radius: 5px;
+    margin: auto, auto, auto, auto;
+
+}
+#recommendation {
+    background-color: rgb(167, 167, 240);
+    text-align: center;
+
+}
+
+h1 #vinylLink {
+    text-align: center;
+}
+
+h2 #year {
+    text-align: center;
+}
