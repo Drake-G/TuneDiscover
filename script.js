@@ -6,6 +6,7 @@ var cover = document.getElementById("cover");
 var year = document.getElementById("year");
 //document.getElementById("count").innerHTML = "Number of albums in circulation: " + albums.length;
 document.getElementById("newTunes").addEventListener("click", function() {
+    
     recommendation = albums[Math.floor(Math.random() * albums.length)];
     document.getElementById("recommendation").innerHTML = "Your new album - " + recommendation;
     if (recommendation === "Pink Floyd: Dark Side of the Moon") {
@@ -505,7 +506,7 @@ document.getElementById("newTunes").addEventListener("click", function() {
 
       year.innerHTML = "This album was released in 2016 and has a runtime of 49 minutes and 1 second."
     }
-    if (recommendation === "The Clayool Lennon Delirium: South of Reality") {
+    if (recommendation === "The Claypool Lennon Delirium: South of Reality") {
       vinylLink.innerHTML = '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=tunescope-20&marketplace=amazon&amp;region=US&placement=B07JJQ6ZJ9&asins=B07JJQ6ZJ9&linkId=d747e1111253bb7f700602da717c38da&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=a7a7f0&bg_color=ffffff"></iframe>'
 
       spotify.innerHTML = '<iframe src="https://open.spotify.com/embed/album/3KiA7e7NDRMKecw7YGVkZK?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>'
@@ -911,6 +912,15 @@ document.getElementById("newTunes").addEventListener("click", function() {
        
       year.innerHTML = "This album was released in 1971 and has a runtime of 43 minutes and 38 seconds."
     }
+    /* if (recommendation === "Foo Fighters: Foo Fighters") {
+         vinyl.Link.innerHTML = ''
+
+         spotify.innerHTML = ''
+
+         year.innerHTML = ""
+
+     }
+    */
 });
 
 
@@ -923,20 +933,23 @@ var albums = ["Pink Floyd: Dark Side of the Moon", "Led Zeppelin: Houses of the 
 "Nazareth: Hair Of The Dog", "Deep Purple: Machine Head", "Mike Oldfield: Tubular Bells", "Led Zeppelin: Coda(Deluxe Edition)", "King Gizzard & The Lizard Wizard: I'm In Your Mind Fuzz", "King Gizzard & The Lizard Wizard: Infest The Rats' Nest",
 "Greta Van Fleet: From The Fires", "Chon: Chon", "The Beatles: Let It Be", "The Beatles: Abbey Road", "Aerosmith: Aerosmith", "Aerosmith: Permanent Vacation", "Amy Winehouse: Back to Black", "Arctic Monkeys: Favourite Worst Nightmare", 
 "Arctic Monkeys: Tranquility Base Hotel & Casino", "Ballyhoo!: Daydreams" , "The Beach Boys: Pet Sounds", "Beastie Boys: Licensed to Ill", "The Beatles: Rubber Soul", "The Beatles: Sgt. Pepper's Lonely Hearts Club Band",
-"Bilie Eilish: dont smile at me", "Billy Joel: The Stranger", "Billy Joel: 52nd Street", "Billy Joel: River of Dreams", /*"The Black Keys: 'Let's Rock'"*/, "Black Sabbath: Black Sabbath", "Black Sabbath: Master of Reality", "Black Sabbath: Paranoid", "BORNS: Dopamine", 
-"Cage the Elephant: Melophobia", "Cage the Elephant: Social Cues", "Childish Gambino: 'Awaken, My Love!'", "The Claypool Lennon Delirium: South of Reality", /*"Coldplay: Everyday Life", */ "Cream: Disraeli Gears",
+"Bilie Eilish: dont smile at me", "Billy Joel: The Stranger", "Billy Joel: 52nd Street", "Billy Joel: River of Dreams", "Black Sabbath: Black Sabbath", "Black Sabbath: Master of Reality", "Black Sabbath: Paranoid", "BORNS: Dopamine", 
+"Cage the Elephant: Melophobia", "Cage the Elephant: Social Cues", "Childish Gambino: 'Awaken, My Love!'", "The Claypool Lennon Delirium: South of Reality", "Cream: Disraeli Gears",
 "The Cult: Sonic Temple", /*"The Cure: Kiss Me, Kiss Me, Kiss Me",*/ "David Bowie: Blackstar", "David Bowie: The Rise and Fall of Ziggy Stardust", "Dispatch: Bang Bang", "The Struts: Everybody Wants", /*"Edward Sharpe & The Magnetic Zeroes: Up from Below",*/
-/*"Electric Light Orchestra: Out of the Blue", "Fall Out Boy: American Beauty/American Psycho", */"Fleetwood Mac: Rumours", /*"Foo Fighters: The Colour and the Shape", "Foo Fighters: Foo Fighters", "Frankie and the Witch Fingers: Brain Telephone", */ "Grace Potter: Daylight", 
+/*"Electric Light Orchestra: Out of the Blue", "Fall Out Boy: American Beauty/American Psycho", */"Fleetwood Mac: Rumours", /*"Foo Fighters: The Colour and the Shape",*/ "Foo Fighters: Foo Fighters",/* "Frankie and the Witch Fingers: Brain Telephone", */ "Grace Potter: Daylight", 
 "Green Day: American Idiot", "Harry Styles: Fine Line", "The Honeydrippers: The Honeydrippers", "I DONT KNOW HOW BUT THEY FOUND ME: RAZZMATAZZ", "I DONT KNOW HOW BUT THEY FOUND ME: 1981 Extended Play",
 "INXS: Kick", "INXS: X", "Jack Johnson: In Between Dreams", "Jack White: Lazaretto", /*"Jacob Collier: Djesse Vol. 3", "Jet: Get Born",*/ "The Jimi Hendrix Experience: Are You Experienced", 
 "King Gizzard & The Lizard Wizard: Flying Microtonal Banana", /*"Le Butcherettes: bi/MENTAL",*/ "Led Zeppelin: In Through the Out Door", "Led Zeppelin: Led Zeppelin", "Led Zeppelin: Led Zeppelin II", 
 "Led Zeppelin: Led Zeppelin III", "Led Zeppelin: Led Zeppelin IV", "Led Zeppelin: Physical Graffiti", "Led Zeppelin: Presence", "Lorde: Melodrama", "Lorde: Pure Heroine", "Maroon 5: Songs About Jane", 
-"Men At Work: Business As Usual", "Metallica: Kill 'Em All", "Metallcia: Master of Puppets", "Metallica: Ride the Lightning", "The Stokes: The New Abnormal", "Nine Inch Nails: Pretty Hate Machine",
-"Oliver Tree: Ugly is Beautiful", "The Paper Kites: Woodland - EP", "Pink Floyd: Wish You Were Here", "Pink Floyd: The Wall", "Queen: Sheer Heart Attack", "The Raconteurs: Broken Boy Solier",
+"Men At Work: Business As Usual", "Metallica: Kill 'Em All", "Metallica: Master of Puppets", "Metallica: Ride the Lightning", "The Stokes: The New Abnormal", "Nine Inch Nails: Pretty Hate Machine",
+"Oliver Tree: Ugly is Beautiful", "The Paper Kites: Woodland - EP", "Pink Floyd: Wish You Were Here", "Pink Floyd: The Wall", "Queen: Sheer Heart Attack", "The Raconteurs: Broken Boy Soldier",
 "The Raconteurs: Consolers of the Lonely", "The Raconteurs: Help Us Stranger", "Rage Against the Machine: Rage Against the Machine", "Rage Against the Machine: Evil Empire", "Red Hot Chili Peppers: The Getaway", 
 "Red Hot Chili Peppers: Californication", "The Rolling Stones: Hot Rocks 1964-1971", /*"Rush: Rush", "Rush: The Spirit of Radio", */"Supertramp: Crime of the Century", "The Sweet: Desolation Boulevard", 
 "Tame Impala: Currents", "Them Crooked Vultures: Them Crooked Vultures", "Van Halen: Van Halen", "The White Stripes: Elephant", "The White Stripes: Icky Thump", "The White Stripes: White Blood Cells", 
-"The Who: Who's Next",];
+"The Who: Who's Next", /*"Marvin Gaye: What's Going On", "Joni Mitchell: Blue", "Stevie Wonder: Songs in the Key of Life", "Prince and the Revolution: Purple Rain", "Bob Dylan: Blood on the Tracks", 
+"Michael Jackson: Thriller", "The Rolling Stones: Exile on Main Street", "The Cure: Disintigration", "Radiohead: Kid A", "Kanye West: My Beautiful Dark Twisted Fantasy", "King Crimson: In the Court of the Crimson King", 
+"The Mothers of Invention: Freak Out", "Black Midi: Cavaclade", "Bruno Pernadas: Private Reasons", "Mdou Moctar: Afrique Victime", "King Gizzard & The Lizard Wizard: Butterfly 3000", "Miles Davis: Bitches Brew", 
+"The Clash: London Calling", "Japanese Breakfast: Jubilee", "Kendrick Lamar: To Pimp a Butterfly", "Public Enemy: It Takes a Nation of Millions to Hold Us Back"*/];
 //recommendation = albums, [Math.floor(Math.random() * albums.length)];
 console.log(albums.length)
 

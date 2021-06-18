@@ -9,13 +9,17 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    <div class = "logo">
-    <img  src="./images/logo.png">
-    </div>
-    <header>Welcome to TuneScope</header>
+    <header class="headerMenu">
+        <div id="headerGrid" id="headerGridLogo" class="logo">
+            <img src="./images/logo.png" alt="Logo" />
+        </div>
+        <nav  class="menu" id="headerGrid" id="headerGridMenu">
+            <a href="#signUp">Sign Up</a>
+        </nav>
+    </header>
     <h1 id="count"></h1>
-    <H1>Please click the button below to get a new album recommendation!</H1>
-    <button class = "tuneButton" id="newTunes">Show me new tunes!</button>
+    <H1 class = "h1click"> Click the button below to get a new album recommendation!</H1>
+    <button class = 'center' class = "tuneButton" id="newTunes">Show me new tunes!</button>
     <p id="recommendation">Your new album:</p>
     <img id = "cover">
     <h1 id = "vinylLink"><a id = "link"></a></h1>
