@@ -22,4 +22,4 @@ https://github.com/Drake-G/TuneScope
 
 ## Site Images
 
-![image](./Images/TuneScopeShot.png)
+![image](./images/TuneScopeShot.png)
