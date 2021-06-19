@@ -14,12 +14,12 @@ This site was designed to give users random album recommendations from a list of
 ## Site Location
 
 ### Deployed: 
-https://randy-chou.github.io/crumbs-food-app/
+https://drake-g.github.io/TuneScope/
 
 ### GitHub repo: 
-https://github.com/Randy-chou/crumbs-food-app
+https://github.com/Drake-G/TuneScope
 
 
 ## Site Images
 
-![image](./Images/TuneScopeShot)
+![image](./Images/TuneScopeShot.png)
